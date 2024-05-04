@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Agence.ProfileClient"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titreprofutl"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/homeCl"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/home"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:id="@+id/etIdClient"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/etCivilite"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Civilité"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etPrenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prénom"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/etRaisonSociale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Raison Sociale"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/etAdresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresse"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/etVille"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Ville"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etCp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Code Postal"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etTelMobile"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Téléphone Mobile"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/etTelFix"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Téléphone Fixe"
+        android:inputType="phone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/btnModClt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Modifier"
+            android:layout_margin="3dp"/>
+
+        <Button
+            android:id="@+id/btnSupClt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Supprimer"
+            android:layout_margin="3dp"/>
+
+        <Button
+            android:id="@+id/btnAnnulClt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Annuler"
+            android:layout_margin="3dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

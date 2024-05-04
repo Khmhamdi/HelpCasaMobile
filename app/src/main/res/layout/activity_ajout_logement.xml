@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajout Logement"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/RBApp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:text="Appartement"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/RBVilla"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="Villa"/>
+            <RadioButton
+                android:id="@+id/RBTr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Terrain"/>
+            <RadioButton
+                android:id="@+id/RBBur"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bureau"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="3">
+            <RadioButton
+                android:id="@+id/RBLC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Location"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/RBVT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vente"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etSuperficie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Sprfcie"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/etNbrChambre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:hint="Chbre"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/etGouvernorat"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:hint="Gouvernorat"/>
+
+    <EditText
+        android:id="@+id/etVilleLgm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ville"
+        android:layout_marginLeft="15dp"/>
+</LinearLayout>
+
+
+    <EditText
+        android:id="@+id/etAdresseLgm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresse"/>
+
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"/>
+
+    <EditText
+        android:id="@+id/etPrix"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Prix"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/etDtAnnonce"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Date de l'annonce" />
+
+    <EditText
+        android:id="@+id/etValidite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Validité en jours"
+        android:layout_marginLeft="40dp"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkMeublAj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Meublé(e)"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/etIdPropLgm"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:hint="ID Propiétaire"
+            android:layout_marginLeft="42dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextUrl"
+                android:layout_width="200dp"
+                android:layout_height="133dp"
+                android:hint="Enter URL" />
+
+            <Button
+                android:id="@+id/buttonLoad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Load Image"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="25dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="Image preview"
+            android:scaleType="fitCenter"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnEnregistrerLgm"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/btnAnnulerLgm"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Annuler"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+</LinearLayout>

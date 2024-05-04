@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">HelpCasaMobile</string>
+    <string name="AppName">Help Casa Mobile</string>
+    <string name="connectUser">Client Login</string>
+    <string name="connectAgency">Agence Login</string>
+    <string name="s_inscrire">S\'inscrire</string>
+    <string name="page_login">Client Login</string>
+    <string name="adresse_email">Adresse e-mail</string>
+    <string name="password">Mot de passe</string>
+    <string name="valider">Valider</string>
+    <string name="page_inscription">Nouveau Client</string>
+    <string name="page_inscription_Agency">Nouveau Utilisateur</string>
+    <string name="nom">Nom</string>
+    <string name="annuler">Annuler</string>
+    <string name="todo">TODO</string>
+    <string name="appname">Help Casa Mobile</string>
+    <string name="notre_application_mobile">Notre application mobile</string>
+    <string name="prenom">Prénom</string>
+    <string name="rs">Raison Sociale seulement pour les Etps</string>
+    <string name="adresse">Adresse</string>
+    <string name="ville">Ville</string>
+    <string name="cp">Code Postal</string>
+    <string name="TM">Tél. Mobile</string>
+    <string name="TF">Tél. Fix</string>
+    <string name="matricule">Marticule</string>
+    <string name="enregistrer">Enregistrer</string>
+    <string name="Alert">Attention!!\nSi vous travaillez à l\'agence et vous n\'avez pas de compte, veuillez contacter l\'administrateur</string>
+    <string name="Agency_login">Agency Login</string>
+    <string name="listClient">Liste des clients</string>
+    <string name="veuillez_inscrire">Si vous n\'avez pas de compte cliquez sur S\'inscrire</string>
+    <string name="titreprofutl">Profile Client</string>
+    <string name="Profil">Mon Profile</string>
+
+    <string-array name="enumTypeLgm">
+        <item>Appartement</item>
+        <item>Villa</item>
+        <item>Terrain</item>
+        <item>Bureau</item>
+    </string-array>
+
+    <string-array name="enumTypeAnnonce">
+        <item>Location</item>
+        <item>Vente</item>
+        <item>Les deux</item>
+    </string-array>
+
+    <string-array name="enumGouvernorat">
+        <item>Ariana</item>
+        <item>Beja</item>
+        <item>Ben Arous</item>
+        <item>Bizerte</item>
+        <item>El Kef</item>
+        <item>Gabes</item>
+        <item>Gafsa</item>
+        <item>Jendouba</item>
+        <item>Kairouan</item>
+        <item>Kesserine</item>
+        <item>Kebili</item>
+        <item>Mahdia</item>
+        <item>Manouba</item>
+        <item>Medenine</item>
+        <item>Monastir</item>
+        <item>Nabeul</item>
+        <item>Sfax</item>
+        <item>Sidi Bouzid</item>
+        <item>Siliana</item>
+        <item>Sousse</item>
+        <item>Tataouine</item>
+        <item>Tozeur</item>
+        <item>Tunis</item>
+        <item>Zaghouan</item>
+    </string-array>
+
+    <string-array name="enumNbrChm">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+</resources>

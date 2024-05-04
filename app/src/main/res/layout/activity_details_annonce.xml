@@ -1,0 +1,233 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Détails Annonce"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_margin="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvIdDA"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Id Logement"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/etatDA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Etat"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tvTypLgmDA"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:hint="Type Logement"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvTypAnnDA"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:hint="Type Annonce"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/tvSuperficieDA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Sprfcie"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvNbrChambreDA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Chbre"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:id="@+id/tvGouvernoratDA"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:hint="Gouvernorat"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvVilleDA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ville"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvAdresseDA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresse"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:id="@+id/tvDescriptionDA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tvPrixDA"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Prix"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvDtAnnonceDA"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Date de l'annonce"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tvValiditeDA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Validité en jours"
+            android:layout_marginLeft="40dp"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkMeublDA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Meublé(e)"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tvIdPropDA"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:hint="ID Propriétaire"
+            android:layout_marginLeft="42dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"/>
+
+        <ImageView
+            android:id="@+id/image_viewDA"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="25dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="Image preview"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btnReservDA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Réserver"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45dp"
+            android:textColor="@color/vert"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnAnnulerDA"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Retour"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>
